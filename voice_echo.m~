@@ -1,6 +1,4 @@
-function voice_echo(filename)
-coefficient = 0.72;
-delay = 0.1;
+function voice_echo(filename, coefficient, delay)
 [y, fs] = audioread(filename);
 delay_sample = round(delay * fs);
 a = [1, zeros(1, delay_sample - 1), -coefficient];
