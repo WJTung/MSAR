@@ -11,6 +11,6 @@ y1 = filter(b, a, y);
 y2 = filter(b, a, y1);
 
 y_telephone = y2;
-sound(y_telephone, fs);
+% sound(y_telephone, fs);
 new_filename = strcat('telephone_', filename);
 audiowrite(new_filename, y_telephone, fs);
