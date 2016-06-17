@@ -10,4 +10,6 @@ opt = pitchShift('defaultOpt');
 opt.pitchShiftAmount = 0;	% Amount for pitch shift (in semitones)
 opt.method='wsola';		% Method for pitch shifting
 wObj2=pitchShift(wObj, opt, 0);
-sound(wObj2.signal,wObj2.fs);
+sound(wObj2.signal, wObj2.fs);
+new_filename = strcat('robot_', filename);
+audiowrite(new_filename, wObj2.signal, wObj2.fs);
