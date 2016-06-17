@@ -61,7 +61,7 @@ for i = 1:ceil(nsamp/chunksize)
   
   N = [firstsamp+1 lastsamp];
   
-  [dd,sr] = audioread(F,N);
+  [dd,sr] = wavread(F,N);
 
   if M  % force mono
     dd = mean(dd,2);

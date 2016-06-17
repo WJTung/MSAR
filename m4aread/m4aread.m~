@@ -252,7 +252,7 @@ else
 %  % no, the saved file is just longer
   
   % Delete tmp file
-  mysystem(['rm -rf ',' "', tmpfile,'"']);
+  mysystem([rmcmd,' "', tmpfile,'"']);
   
   % debug
 %  disp(['sttfrm=',num2str(sttfrm),' endfrm=',num2str(endfrm),' delay=',num2str(delay),' len=',num2str(length(Y))]);
