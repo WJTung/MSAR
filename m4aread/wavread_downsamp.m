@@ -13,6 +13,8 @@ if nargin < 2; N = []; end
 if nargin < 3; M = 0; end
 if nargin < 4; DS = 1; end
 
+M = 1; % must be mono for pitchShift
+
 % Convert N to original sampling rate
 N = 1+DS*(N-1);
 
