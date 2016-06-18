@@ -1,5 +1,4 @@
-function voice_around(filename)
-[y,fs] = audioread(filename);
+[y,fs] = audioread('origin.wav');
 ok_len = length(y);
 t = (1:ok_len)/ok_len;
 for i = 1:(ok_len/4)
@@ -19,5 +18,5 @@ for i = (ok_len/4*3)+1:(ok_len)
     z(i,2) = y(i) * 10;
 end
 % sound(z,fs);
-new_filename = strcat('around_', filename);
+new_filename = 'around.wav';
 audiowrite(new_filename, z, fs);
