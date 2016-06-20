@@ -11,4 +11,5 @@ voice_robot;
 voice_chorus;
 voice_fan;
 voice_highecho;
+voice_lowecho;
 voice_down;
